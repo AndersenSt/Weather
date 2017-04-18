@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {ListItem} from 'material-ui/List';
-import CommunicationCall from 'material-ui/svg-icons/communication/call';
 import Delete from 'material-ui/svg-icons/Action/delete';
 import {indigo500} from 'material-ui/styles/colors';
 

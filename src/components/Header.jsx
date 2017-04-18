@@ -1,8 +1,5 @@
 import React from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { fetchWeather } from '../actions';
 
 class Header extends React.Component {
     constructor(props) {
@@ -51,8 +48,4 @@ class Header extends React.Component {
     }
 }
 
-const mapDispatchToProps = dispatch => ({
-    fetchWeather: bindActionCreators(fetchWeather, dispatch)
-});
-
-export default connect(null, mapDispatchToProps)(Header);
+export default Header;

@@ -1,8 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import Location from './Location';
-import { deletLocation } from '../actions';
 
 class ListLocations extends React.Component {
     render() {
@@ -21,14 +18,5 @@ class ListLocations extends React.Component {
     }
 }
 
-const mapStateToProps =  state => ({
-    weather: state
-});
-
-const mapDispatchToProps = dispatch => ({
-    deletLocation: bindActionCreators(deletLocation, dispatch)
-});
-
-  
-export default connect(mapStateToProps, mapDispatchToProps)(ListLocations);
+export default ListLocations;
 
